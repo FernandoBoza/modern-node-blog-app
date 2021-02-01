@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "businesses",
+  "info": {
+    "name": "business"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

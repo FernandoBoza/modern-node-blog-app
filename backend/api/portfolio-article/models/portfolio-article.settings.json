@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_articles",
+  "info": {
+    "name": "Portfolio Article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "ArticleBase": {
+      "type": "component",
+      "repeatable": false,
+      "component": "article-base.article-base"
+    }
+  }
+}
