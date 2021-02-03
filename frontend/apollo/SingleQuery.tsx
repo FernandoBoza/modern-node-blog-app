@@ -1,9 +1,9 @@
 import gql from 'graphql-tag';
 
-const ARTICLE_QUERY = (category: string) => {
-  return gql`
-    query ARTICLE_QUERY {
-        ${category}Articles {
+const ARTICLE_QUERY = (category: string | string[]) => {
+    return gql`
+    query SINGLE_ARTICLE_QUERY($slug: String!) {
+        ${category}Articles(where: {slug: $slug}) {
           title,
           slug,
           published_at,
