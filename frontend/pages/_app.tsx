@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, apollo }) {
       <style global jsx>
         {`
       .gradient {
-        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        background: linear-gradient(90deg, #3365d5 0%, #51b4da 100%);
       }
       `}
       </style>

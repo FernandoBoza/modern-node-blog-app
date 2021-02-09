@@ -3,8 +3,6 @@ import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 
 const Article = ({ article }) => {
-
-    console.log(article);
     const category = article.category,
         singleArticle = article[category + 'Articles'][0],
         date = new Date(singleArticle.published_at).toLocaleDateString();

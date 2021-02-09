@@ -7,9 +7,9 @@ export default function Card({ article }) {
     return (
         <Link href={`${category}/${slug}`}>
             <a className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                    <img src={`http://localhost:1337${ArticleBase.images[1].url}`} alt="" />
-                    <div className="w-full font-bold text-xl text-gray-800 px-6">
+                <div className="flex-1 bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src={`http://localhost:1337${ArticleBase.images[1].url}`} alt={title} className='rounded-2xl' />
+                    <div className="w-full font-bold text-xl text-gray-800 px-6 my-5">
                         {title}
                     </div>
                     <p className="text-gray-800 text-base px-6 mb-5">
